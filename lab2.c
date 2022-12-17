@@ -28,7 +28,7 @@ int** read_board_from_file(char* filename){
 
 
 int is_board_valid(){
-    pthread_t* tid;  /* the thread identifiers */
+    pthread_t* tid; 
     pthread_attr_t attr;
     int thread_index = 0;
     worker_validation = (int*) malloc(sizeof(int) * NUM_OF_THREADS);
