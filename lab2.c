@@ -49,7 +49,7 @@ int is_board_valid(){
                 param_struct * checkcolumns_thread = (param_struct*) malloc(sizeof(param_struct));
                 checkcolumns_thread->starting_row = i;
                 checkcolumns_thread->starting_col = j;
-                pthread_create(&tid[thread_index++], NULL, check_columns,checkcolumns_thread);
+                pthread_create(&tid[thread_index++], NULL, check_columns, checkcolumns_thread);
             }
 
             if(j==0){
